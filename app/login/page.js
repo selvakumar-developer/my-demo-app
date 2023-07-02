@@ -94,7 +94,7 @@ export default function SignInSide() {
       formData.append("file", convertedFile);
 
       axios
-        .post("http://localhost:3000/api/user", formData, {
+        .post("/api/user", formData, {
           headers: { "Content-Type": "multipart/form-data" },
         })
         .then((response) => {
